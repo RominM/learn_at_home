@@ -1,0 +1,21 @@
+@import './../../pages/login/login.scss';
+
+.signup-form {
+   @extend .login-form;
+   .button {
+      width: 100%;
+   }
+   .addForm-signup {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 25px;
+      .checkbox-signup {
+         display: inline;
+      }
+   }
+   .btn-signup {
+      background-color: $GreenTree;
+      color: $White;
+      @include btnModule;
+   }
+}

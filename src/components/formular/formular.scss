@@ -1,0 +1,26 @@
+@import './../../style/module.scss';
+
+.bloc-page {
+   background-color: $MainGrey;
+   width: 100vw;
+   height: 100vh;
+   .head-form {
+     position: fixed;
+     width: 100%;
+     min-width: 275px;
+     max-width: 550px;
+     margin: auto;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     font-family: $MainFont;
+     .bg-form {
+       border: solid 1px $GreenTree;
+       border-radius: 15px;
+       width: 100%;
+       margin: auto;
+       box-shadow: 2px 4px 8px $Shadow;
+       background-color: $White;
+     }
+   }
+}

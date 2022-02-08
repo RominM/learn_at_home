@@ -1,6 +1,25 @@
+// FONTS
 @font-face {
    font-family: ABeeZee;
    src: url(./../assets/fonts/ABeeZee/ABeeZee-Regular.ttf) format(truetype);
  }
  
  $MainFont: ABeeZee, 'Arial', 'sans-serif';
+
+// COLORS
+$White: #fff;
+$Black: #000;
+$Shadow: rgb(98, 98, 98);
+$MainGrey: #ECF0F1;
+$GreenTree: #0B2822;
+
+// MIXINS
+@mixin btnModule {
+  padding: 13px 35px;
+  width: 122px;
+  height: 22px;
+  line-height: 22px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 2px 3px 4px $Black;
+}
