@@ -3,14 +3,14 @@ import { Link } from 'react-router-dom'
 import LogoHead from '../logoHead/LogoHead'
 
 export default function AcountAccess() {
-  return (
+ return (
+  <div>
+   <LogoHead />
+   <Link to="access">
     <div>
-      <LogoHead />
-      <Link to="access">
-        <div>
-          <img src="" alt="" />
-        </div>
-      </Link>
+     <img src="" alt="" />
     </div>
-  )
+   </Link>
+  </div>
+ )
 }

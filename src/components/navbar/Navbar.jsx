@@ -5,7 +5,7 @@ import './navbar.scss'
 
 export default function Navbar() {
  return (
-  <nav>
+  <nav>npm i sass
    <AcountAccess />
    <div className="navigation">
     <Link to={'dashboard/'}>Accueil</Link>

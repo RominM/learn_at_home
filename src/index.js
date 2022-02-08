@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Dashboard from './pages/dashboard/Dashboard'
 import Login from './pages/login/Login'
-import './reset.css'
+import './style/reset.css'
 
 ReactDOM.render(
  <React.StrictMode>

@@ -1,38 +1,64 @@
-.login {
-position: fixed;
-width: 100%;
-min-width: 275px;
-max-width: 500px;
-margin: auto;
-top: 50%;
-left: 50%;
-transform: translate(-50%,-50%);
-}
+@import './../../style/module.scss';
 
-h1 {
-   display: flex;
-}
-
-.bground {
-   border: solid;
-   border-radius: 25px;
-   width: 100%;
-   margin: auto;
-   form {
-      padding: 20%;
-   }
+.bloc-page {
+  background-color: #ECF0F1;
+  width: 100vw;
+  height: 100vh;
+  padding: 50px;
+  .login {
+    position: fixed;
+    width: 100%;
+    min-width: 275px;
+    max-width: 550px;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: $MainFont;
+    .bground {
+      border: solid 1px;
+      border-radius: 15px;
+      width: 100%;
+      margin: auto;
+      box-shadow: 2px 4px 8px rgb(98, 98, 98);
+      background-color: #fff;
+      form {
+        padding: 5% 7%;
+      }
       .divForm {
-         display: flex;
-         flex-direction: column;
-         width: 100%;
-         margin: auto;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: auto;
+        input {
+          border: solid 2px #0B2822;
+          background-color: #ECF0F1;
+          border-radius: 5px;
+          height: 35px;
+          margin: 10px 0;
+          box-shadow: 2px 2px 5px #0B2822;
+        }
+        label {
+          margin-top: 10px;
+        }
       }
       .addForm {
-         display: flex;
-         justify-content: space-around;
+        display: flex;
+        justify-content: space-around;
       }
       .buttons {
-         display: flex;
-         justify-content: space-around;
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+        .btn-login {
+          background-color: rgb(212, 212, 212);
+        }
+        .btn-signup {
+          background-color: rgb(0, 78, 17);
+          color: #fff;
+        }
       }
+    }
+  }
 }
+
