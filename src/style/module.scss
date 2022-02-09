@@ -16,10 +16,20 @@ $GreenTree: #0B2822;
 // MIXINS
 @mixin btnModule {
   padding: 13px 35px;
-  width: 122px;
-  height: 22px;
+  width: auto;
+  height: 30px;
   line-height: 22px;
   text-align: center;
   border-radius: 5px;
   box-shadow: 2px 3px 4px $Black;
+}
+
+@mixin bgForm {
+  padding: 50px;
+  label {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 10px auto;  
+  }
 }

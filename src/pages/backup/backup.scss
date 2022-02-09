@@ -1,0 +1,14 @@
+@import './../../style/module.scss';
+@import './../../pages/login/login.scss';
+
+
+.backup-form {
+   @extend .login-form;
+}
+
+.btn-backup {
+   background-color: $GreenTree;
+   color: $White;
+   margin: auto;
+   @include btnModule;
+}

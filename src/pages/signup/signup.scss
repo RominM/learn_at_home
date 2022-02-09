@@ -2,6 +2,10 @@
 
 .signup-form {
    @extend .login-form;
+   input {
+      margin-top: 5px;
+      margin-bottom: 15px;
+   }
    .button {
       width: 100%;
    }
@@ -11,11 +15,26 @@
       margin-bottom: 25px;
       .checkbox-signup {
          display: inline;
+         input {
+            margin: 8px 7px;
+            cursor: pointer;
+         }
+      }
+      span {
+         color: $GreenTree;
+         font-weight: bold;
+      }
+      a {
+         text-decoration: underline;
       }
    }
-   .btn-signup {
-      background-color: $GreenTree;
-      color: $White;
-      @include btnModule;
+   button {
+      width: 100%;
+      .btn-signup {
+         background-color: $GreenTree;
+         color: $White;
+         margin: auto;
+         @include btnModule;
+      }
    }
 }

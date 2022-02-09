@@ -2,13 +2,7 @@
 
 
 .login-form {
-  padding: 50px;
-  label {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin: 10px auto;
-  }
+  @include bgForm;
   input[type="text"], 
   input[type="password"], 
   input[type="email"] {
@@ -23,7 +17,7 @@
     box-sizing: border-box;
   }
 
-  .addForm {
+  .addForm-login {
     display: flex;
     justify-content: space-between;
     margin: 15px 0;

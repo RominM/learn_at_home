@@ -7,22 +7,17 @@ const SignUp = () => {
   return (
     <Formular>
       <form action="#" className="signup-form">
-        <label>
-          Identifiant
-          <input type="text" name="identification" />
-        </label>
-        <label>
-          Mot de passe
-          <input type="password" name="password" />
-        </label>
-        <label>
-          Confirmer mot de passe
-          <input type="password" name="identification" />
-        </label>
-        <label>
-          Email
-          <input type="email" name="password" />
-        </label>
+        <label>Identifiant</label>
+        <input type="text" name="identification" />
+
+        <label>Mot de passe</label>
+        <input type="password" name="password" />
+
+        <label>Confirmer mot de passe</label>
+        <input type="password" name="identification" />
+
+        <label>Email</label>
+        <input type="email" name="password" />
 
         <div className="addForm-signup">
           <label className="checkbox-signup">
@@ -32,13 +27,13 @@ const SignUp = () => {
 
           <label className="checkbox-signup">
             <input type="checkbox" name="tuteur" />
-            j'accpete les <a href="#">condition générales</a>
+            j'accpete les <Link to="#">condition générales</Link>
           </label>
         </div>
-        <button type="button" className="button">
-          <a href="#" className="btn-signup">
+        <button type="button">
+          <Link to="/" className="btn-signup">
             Créer un compte
-          </a>
+          </Link>
         </button>
       </form>
     </Formular>

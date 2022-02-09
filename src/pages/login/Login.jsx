@@ -19,12 +19,12 @@ const Login = () => {
         <label>Mot de passe</label>
         <input type="password" name="password" />
 
-        <div className="addForm">
+        <div className="addForm-login">
           <div className="remember">
             <input type="checkbox" name="remember" />
             <label className="remember">Se souvenir de moi</label>
           </div>
-          <Link to="#" className="forgotPW">
+          <Link to="backup/" className="forgotPW">
             Mot de passe oublié ?
           </Link>
         </div>
