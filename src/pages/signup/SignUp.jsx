@@ -1,23 +1,67 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { useForm } from "react-hook-form";
+import { Link, useNavigate } from "react-router-dom";
 import Formular from "../../components/formular/Formular";
 import "./signup.scss";
 
 const SignUp = () => {
+  const { register, handleSubmit } = useForm();
+  const navigate = useNavigate();
+
+  const onSubmit = (e) => {
+    navigate("/");
+  };
+
   return (
     <Formular>
-      <form action="#" className="signup-form">
-        <label>Identifiant</label>
-        <input type="text" name="identification" />
+      <form
+        action="#"
+        className="signup-form"
+        onSubmit={handleSubmit(onSubmit)}
+      >
+        <label>
+          Identifiant
+          <span className="inform"> *</span>
+          <input
+            type="text"
+            name="identification"
+            required="require"
+            {...register("Identifiant")}
+          />
+        </label>
 
-        <label>Mot de passe</label>
-        <input type="password" name="password" />
+        <label>
+          Email
+          <span className="inform"> *</span>
+          <input
+            type="email"
+            name="email"
+            required="require"
+            {...register("email")}
+          />
+        </label>
 
-        <label>Confirmer mot de passe</label>
-        <input type="password" name="identification" />
+        <label>
+          Mot de passe
+          <span className="inform"> *</span>
+          <input
+            type="password"
+            name="password"
+            required="require"
+            {...register("mot de passe")}
+          />
+        </label>
 
-        <label>Email</label>
-        <input type="email" name="password" />
+        <label>
+          Confirmer mot de passe
+          <span className="inform"> *</span>
+          <input
+            type="password"
+            name="identification"
+            required="require"
+            {...register("mot de passe")}
+          />
+        </label>
 
         <div className="addForm-signup">
           <label className="checkbox-signup">
@@ -26,16 +70,19 @@ const SignUp = () => {
           </label>
 
           <label className="checkbox-signup">
-            <input type="checkbox" name="tuteur" />
+            <input
+              type="checkbox"
+              name="tuteur"
+              required="require"
+              {...register("cgu")}
+            />
             j'accpete les <Link to="#">condition générales</Link>
+            <span className="inform"> *</span>
           </label>
         </div>
-        <button type="button">
-          <Link to="/" className="btn-signup">
-            Créer un compte
-          </Link>
-        </button>
+        <input type="submit" value="Créer un compte"></input>
       </form>
+      <p className="inform">* Champs obligatoire</p>
     </Formular>
   );
 };
